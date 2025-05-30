@@ -14,23 +14,23 @@ PhoneBook::PhoneBook()
 };
 
 void PhoneBook::addNewClient() {
-	if (count >= 100) {
+	if (count >= size) {
 		cout << "Книга заполнена!" << endl;
 		return;
 	}
 
-	char FullName[150], HomePhone[150], WorkPhone[150], Phone[150], Info[150];
+	char FullName[150], HomePhone[15], WorkPhone[15], Phone[15], Info[150];
 
 	cin.ignore(numeric_limits<streamsize>::max(), '\n'); //для игнорирования после введенного символа до \ n
 
 	cout << "Введите ФИО: ";
 	cin.getline(FullName, 150);
 	cout << "Домашний телефон: ";
-	cin.getline(HomePhone, 150);
+	cin.getline(HomePhone, 15);
 	cout << "Рабочий телефон: ";
-	cin.getline(WorkPhone, 150);
+	cin.getline(WorkPhone, 15);
 	cout << "Личный телефон: ";
-	cin.getline(Phone, 150);
+	cin.getline(Phone, 15);
 	cout << "Доп. информация: ";
 	cin.getline(Info, 150);
 

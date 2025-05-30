@@ -6,9 +6,9 @@ class Clients
 {
 private:
 	char* FullName;
-	char HomePhone[150];
-	char WorkPhone[150];
-	char Phone[150];
+	char HomePhone[15];
+	char WorkPhone[15];
+	char Phone[15];
 	char Info[150];
 
 
