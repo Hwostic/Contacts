@@ -153,9 +153,9 @@ void PhoneBook::ReadFile(const char* FileName) {
 }
 
 PhoneBook::~PhoneBook() {
-	char* arr;
+	/*char* arr;
 	for (int i = 0; i < count; i++) {
 		arr = clients[i].getFullName();
 		delete[] arr;
-	}
+	}*/
 }
