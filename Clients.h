@@ -11,7 +11,6 @@ private:
 	char Phone[15];
 	char Info[150];
 
-
 public:
 
 	Clients();
